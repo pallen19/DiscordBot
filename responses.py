@@ -2,11 +2,13 @@ import random
 def get_response(message: str) -> str:
     p_message = message.lower()
 
-    if p_message == 'hello':
+    if message == 'hello':
         return 'Whats up!'
     
+    if message == 'I\'m sad':
+        return "You're an amazing person, try smiling more often!"
     if message == 'roll':
-        return str(random.randint(1,6))
+        return str((random.randint(1,6)) + random.randint(1,6))
     if p_message == '!help':
         return '`This is a message you can modify`'
     
